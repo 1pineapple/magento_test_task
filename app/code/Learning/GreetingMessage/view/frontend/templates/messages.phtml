@@ -1,0 +1,29 @@
+<?php
+$helper = $this->helper('Learning\GreetingMessage\Helper\Data');
+$collection = $helper->getGreetingCollection();
+?>
+
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Username</th>
+        <th>Message</th>
+        <th>Created At</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($collection as $item): ?>
+        <tr>
+            <td><?php echo $item->getGreetingId();?></td>
+            <td><?php echo $item->getUsername();?></td>
+            <td><?php echo $item->getMessage();?></td>
+            <td><?php echo $item->getDateTime();?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+
+

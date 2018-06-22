@@ -1,0 +1,18 @@
+
+<?php $helper = $this->helper('Learning\GreetingMessage\Helper\Data'); ?>
+<?php if ($helper->isLoggedIn()): ?>
+
+<h1>Greeting message</h1>
+
+        <form action="<?php echo $this->getUrl("send/page/home")?>" method="post">
+            <input type="hidden" name="username" value="<?= $helper->getCustomer(); ?>" >
+            <textarea name="greetingMessage"></textarea>
+            <input type="submit" value="Send greeting message" class="action  primary">
+        </form>
+
+
+
+
+<?php endif;?>
+
+

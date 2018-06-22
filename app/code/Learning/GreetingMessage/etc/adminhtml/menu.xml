@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Learning_GreetingMessage::greeting" title="Greeting Message" module="Learning_GreetingMessage" sortOrder="51" action="learning_greetingmessage/message/index" resource="Learning_GreetingMessage::greeting"/>
+    </menu>
+</config>
